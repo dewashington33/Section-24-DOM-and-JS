@@ -25,4 +25,20 @@ for (let img of allsqrimg) {
 }
 
 //****** querySelector *************/
+// ** selects the first one it finds **
+// get an anchor tag where the alt attribute is "link to Wikipedia on Unicorns"
+const getanchortag = document.querySelector('a[alt="link to Wikipedia on Unicorns"]')
+console.log(getanchortag);
+
+//*** querySelectorAll */
+// same idea as querySelector but return a collection of matching elements
+const getAllpTags = document.querySelectorAll('p')
+console.log(getAllpTags)
+// get all anchor tags inside of paragraphs
+const allATagInP = document.querySelectorAll('p a')
+console.log(allATagInP)
+
+
+
+
 
